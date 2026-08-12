@@ -20,10 +20,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col">
-          <h1 className="text-2xl font-semibold text-white">Links</h1>
-          <Link className="text-2xl font-light text-white hover:underline" to="/">Home</Link>
-          <Link className="text-2xl font-light text-white hover:underline" to="/about">About Us</Link>
-          <Link className="text-2xl font-light text-white hover:underline" to="/contact">Contact Us</Link>
+          <h1 className="text-2xl font-semibold text-white">Links:</h1>
+          <Link className="text-xl sm:text-2xl font-light text-white hover:underline" to="/">Home</Link>
+          <Link className="text-xl sm:text-2xl font-light text-white hover:underline" to="/about">About Us</Link>
+          <Link className="text-xl sm:text-2xl font-light text-white hover:underline" to="/contact">Contact Us</Link>
         </div>
       </div>
     </footer>

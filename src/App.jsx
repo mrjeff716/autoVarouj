@@ -1,13 +1,13 @@
-import { useState } from 'react'
 import { Route, Routes } from 'react-router'
 import HomePage from './pages/HomePage'
 import About from './pages/About'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import NotFound from  './components/NotFound'
+import Logo from './media/Logo.png'
 
 function App() {
-
+  document.querySelector('.title').setAttribute('href', Logo)
   return (
     <div>
     <Routes>
