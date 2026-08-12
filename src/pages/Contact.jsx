@@ -40,7 +40,7 @@ const Contact = () => {
           className="h-full w-full object-cover object-center"
           loading="eager"
         />
-        <h1 className="absolute bottom-10 sm:bottom-36 text-xl text-center sm:text-7xl text-white border-2 p-3 border-dashed font-bold rounded-md">
+        <h1 className="absolute bottom-10 sm:bottom-36 text-xl text-center sm:text-7xl text-white border-b-[0.125rem] p-3 border-dashed font-bold rounded-lg">
           Need a spare part? Lets get you moving
         </h1>
       </section>
