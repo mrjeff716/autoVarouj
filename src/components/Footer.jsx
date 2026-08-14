@@ -11,7 +11,7 @@ const Footer = () => {
           <h1 className="text-2xl font-semibold text-white">Phone</h1>
           <p className="text-2xl font-light text-white">+961 03 454 401</p>
           <h1 className="text-2xl font-semibold text-white mt-4">Send Us a Quick Email</h1>
-          <p className="text-2xl font-light text-white">example@example.com</p>
+          <a className="text-2xl font-light text-white hover:underline" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnZfXlZJnZhwHGVpqstvlVWpVtnfhVVLfVFFvVcGJQLxJRPjFRlMVdHqwKGSfCRZwSsKql" target="_blank">vatchekojak@gmail.com</a>
         </div>
         <div className="flex flex-col">
           <h1 className="text-2xl font-semibold text-white">Location</h1>

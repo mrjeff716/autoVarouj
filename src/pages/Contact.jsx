@@ -90,7 +90,7 @@ const Contact = ({setPage, page}) => {
           <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl align-middle font-bold mt-5">
             <MapPinPen className="inline-block md:size-10" /> Location:{" "}
             <span className="text-xl sm:text-2xl md:text-3xl lg:text-3xl text-primaryHover font-light">
-              St Joseph street 130 meters ahead of Total Energies St Joseph
+              St Joseph street Daoura 130 meters ahead of Total Energies St Joseph
               <a
                 href="https://www.google.com/maps?q=33.891265869140625,35.55349349975586&z=17&hl=en"
                 className="underline ml-1"
