@@ -5,8 +5,8 @@ import bosch from "../media/bosch.jpg"
 import febi from "../media/febi.svg"
 import mannFilter from "../media/mannFilter.png"
 import bmw from "../media/bmwm4.webp"
-import lada from "../media/lada.webp"
-import minicooper from "../media/minicooper.webp"
+import ladaniva from "../media/ladaniva4.webp"
+import minicooper from "../media/minicountryman.webp"
 import alfaromeo from "../media/alfaromeo.webp"
 import fiat500 from "../media/fiat500.webp"
 import oilfilter from "../media/oilfilter.webp";
@@ -45,7 +45,7 @@ export const carsList = [
     alt: 'BMW image'
   },
   {
-    imageUrl: lada,
+    imageUrl: ladaniva,
     title: 'Lada',
     content: 'Renowned for durability and reliability, Lada vehicles are built to handle demanding conditions. We offer genuine parts to ensure long-lasting performance.',
     alt: 'Lada image'

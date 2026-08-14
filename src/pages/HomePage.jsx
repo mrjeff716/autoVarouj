@@ -14,8 +14,12 @@ import { useRef, useEffect } from 'react'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-const HomePage = () => {
+const HomePage = ({setPage, page}) => {
     const ref = useRef()
+
+    useEffect(() => {
+      setPage("Home")
+    }, [])
   
     useEffect(() => {
       if (ref.current) {
@@ -34,8 +38,8 @@ const HomePage = () => {
 
   return (
     <div className="bg-background h-screen text-muted">
-      <Navbar />
-    <section ref={ref} className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[500px] overflow-hidden mt-[10vh] scroll-mt-20">
+      <Navbar page={page} />
+    <section ref={ref} className="relative h-[400px] sm:h-[400px] md:h-[500px] lg:h-[500px] overflow-hidden mt-[10vh] scroll-mt-20" data-aos="fade-in" data-aos-duration="1000">
   <video
   loading="eager"
   autoPlay
@@ -79,7 +83,7 @@ const HomePage = () => {
 </div>
 </section>
 <section className="px-5 my-[5rem] text-2xl sm:text-3xl sm:my[6rem] md:text-4xl mt-[2rem] lg:text-4xl font-light">
-  <span className="[text-shadow:0px_6px_10px_rgba(0,0,0,0.35)]">With over 40 years of experience, we provide authentic, new, and original car spare parts from our shop in Dora.
+  <span className="[text-shadow:0px_6px_10px_rgba(0,0,0,0.35)]">With over 50 years of experience, we provide authentic, new, and original car spare parts from our shop in Dora.
   We are committed to delivering reliable products and trusted service to customers across Lebanon, Syria, and Jordan. <Link to="/about" className="[text-shadow:0px_6px_10px_rgba(0,0,0,0.35)] text-primary font-bold hover:underline">Learn more...</Link></span>
 </section>
 <section className="p-5 mt-10 bg-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom"> 

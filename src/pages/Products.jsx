@@ -6,8 +6,12 @@ import { useRef, useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
-const Products = () => {
+const Products = ({setPage, page}) => {
   const ref = useRef();
+
+  useEffect(() => {
+    setPage("Products")
+  }, []);
 
   useEffect(() => {
     if (ref.current) {
@@ -26,7 +30,7 @@ const Products = () => {
 
   return (
     <div className="text-slate-800">
-      <Navbar />
+      <Navbar page={page} />
       <section className="mt-[15vh] px-5 scroll-mt-20" ref={ref}>
         <div className="flex flex-col items-center text-center">
           <h1 className="text-3xl sm:text-5xl font-bold text-primary">

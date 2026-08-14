@@ -16,8 +16,12 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 
-const About = () => {
+const About = ({setPage, page}) => {
   const ref = useRef()
+
+  useEffect(() => {
+      setPage("About")
+    }, [])
   
     useEffect(() => {
       if (ref.current) {
@@ -36,7 +40,7 @@ const About = () => {
 
   return (
     <div className="bg-background h-screen text-muted">
-      <Navbar />
+      <Navbar page={page} />
       <section ref={ref} className="relative h-[250px] sm:h-[400px] md:h-[500px] lg:h-[400px] overflow-hidden mt-[10vh] flex flex-col items-center scroll-mt-20">
       <img src={spareParts2} className="h-full w-full object-cover object-center" loading="eager"/>
       <h1 className="absolute bottom-36 text-5xl sm:text-7xl text-white border-4 p-3 border-dashed font-semibold rounded-md">About Us</h1>
@@ -58,7 +62,7 @@ const About = () => {
       <section className="px-5 bg-background">
       <h1 className="text-3xl sm:text-5xl font-bold mt-10">Our Beginning:</h1>
       <p className="text-lg sm:text-2xl font-medium" data-aos="fade-in">
-        For more than 30 years, our business has been built on experience, trust, and a passion for the automotive industry.
+        For more than 50 years, our business has been built on experience, trust, and a passion for the automotive industry.
         What began as a family business, passed down from one generation to the next, has grown into a trusted source for automotive spare parts. After inheriting the business from his father, who continues to operate another branch in Bchamoun, our father dedicated himself to growing the business and building strong relationships with customers across the region.
       </p>
       <h1 className="text-3xl sm:text-5xl font-bold mt-10">Growing The Business:</h1>
@@ -104,7 +108,7 @@ const About = () => {
       </div>
     </section>
     <section className="flex flex-col mt-10 p-4">
-      <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-[5rem] justify-self-center border-b-2 border-b-slate-800">Over 3 decades:</h1>
+      <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-[5rem] justify-self-center border-b-2 border-b-slate-800">Over 5 decades:</h1>
       <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 grid gap-8">
         <div data-aos="fade-up" data-aos-duration="1000" className="relative">
           <img src={bmwm5} alt="BMW m5 image" loading="lazy" className="rounded-2xl"/>
@@ -116,7 +120,7 @@ const About = () => {
         </div>
         <div data-aos="fade-up" data-aos-duration="2400" className="relative">
           <img src={minicooper2img} alt="Fiat image" loading="lazy" className="rounded-2xl"/>
-          <h1 className="text-white absolute bottom-16 left-5 text-3xl md:text-4xl lg:text-5xl"><strong className="text-slate-300">Lebanon</strong> and <strong className="text-slate-300">Syria</strong> Garage Network Trusted Partners</h1>
+          <h1 className="text-white absolute bottom-16 left-5 text-3xl md:text-4xl lg:text-5xl"><strong className="text-slate-300">Lebanon</strong> , <strong className="text-slate-300">Syria</strong>, and <strong className="text-slate-300">Jordan</strong> Garage Network Trusted Partners</h1>
         </div>
       </div>
     </section>

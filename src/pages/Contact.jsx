@@ -10,8 +10,12 @@ import { useRef, useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
-const Contact = () => {
+const Contact = ({setPage, page}) => {
   const ref = useRef();
+
+  useEffect(() => {
+      setPage("Contact")
+    }, []);
 
   useEffect(() => {
     if (ref.current) {
@@ -30,7 +34,7 @@ const Contact = () => {
 
   return (
     <div className="h-screen text-muted">
-      <Navbar />
+      <Navbar page={page} />
       <section
         ref={ref}
         className="relative h-[250px] sm:h-[400px] md:h-[500px] lg:h-[400px] overflow-hidden mt-[10vh] flex flex-col items-center scroll-mt-20"
@@ -53,7 +57,7 @@ const Contact = () => {
             Monday - Friday: 7:30 AM until 5:30 PM
           </p>
           <p className="underline text-xl sm:text-2xl md:text-3xl lg:text-3xl text-primaryHover font-light">
-            Saturday: 7:30 AM until 4:30 PM
+            Saturday: 7:30 AM until 2:00 PM
           </p>
           <p className="underline text-xl sm:text-2xl md:text-3xl lg:text-3xl text-primaryHover font-light">
             Sunday: Closed
