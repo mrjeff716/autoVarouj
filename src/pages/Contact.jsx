@@ -101,16 +101,14 @@ const Contact = ({setPage, page}) => {
           </h1>
         </div>
         <div className="w-[100%] md:w-1/2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3311.937406063881!2d35.55091857570955!3d33.891265873217996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzI4LjYiTiAzNcKwMzMnMTIuNiJF!5e0!3m2!1sen!2slb!4v1786360058158!5m2!1sen!2slb"
-            width="600"
-            height="450"
-            style={{ border: "0" }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            className="rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.9)] mt-10 md:mt-0 w-[100%] md:min-w-[300px] max-w-[1000px]"
-          ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.9374749179865!2d35.5535516!3d33.8912641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f175ce31f920b%3A0xd4326d0888103a8f!2sVatche%20Auto%20Spare%20Parts!5e0!3m2!1sen!2slb!4v1786699717215!5m2!1sen!2slb"
+          width="600"
+          height="450"
+          style={{ border: "0" }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          className="rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.9)] mt-10 md:mt-0 w-[100%] md:min-w-[300px] max-w-[1000px]"></iframe>
         </div>
       </section>
       <section className="p-5 mt-10 bg-card" data-aos="fade-up">
